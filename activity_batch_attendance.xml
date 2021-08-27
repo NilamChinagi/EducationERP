@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saahay.littlemillennium.BatchAttendance">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/llbutton"
+            android:layout_height="match_parent">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/LittlePrimary"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Student Attendance"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calll"/>
+                <EditText
+                    android:id="@+id/edtdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="10/03/2018"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@color/LittlePrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text=" Name"/>
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@color/LittlePrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text="P /A "/>
+                <TextView
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@color/LittlePrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Reason For Absence"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+            <ListView
+                android:id="@+id/llbatch"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Submit"/>
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Cancel"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

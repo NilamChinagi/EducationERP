@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.saahay.littlemillennium.AttachFileActivity"
+    tools:showIn="@layout/activity_attach_file">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/tvCommuBody"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:text="Math-Subtraction (Jump Strategy). sums done on the same"
+
+           android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+       <ImageView
+           android:layout_margin="10dp"
+           android:id="@+id/ivShowAttach"
+           android:layout_width="wrap_content"
+           android:layout_height="150dp" />
+       <ImageView
+           android:layout_margin="10dp"
+           android:id="@+id/ivShowAttach2"
+           android:layout_width="wrap_content"
+           android:layout_height="150dp" />
+       <ImageView
+           android:layout_margin="10dp"
+           android:id="@+id/ivShowAttach3"
+           android:layout_width="wrap_content"
+           android:layout_height="150dp" />
+       <ImageView
+           android:layout_margin="10dp"
+           android:id="@+id/ivShowAttach4"
+           android:layout_width="wrap_content"
+           android:layout_height="150dp" />
+       <ImageView
+           android:layout_margin="10dp"
+           android:id="@+id/ivShowAttach5"
+           android:layout_width="wrap_content"
+           android:layout_height="150dp" />
+   </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

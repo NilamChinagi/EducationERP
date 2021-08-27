@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center_horizontal"
+        android:orientation="horizontal"
+        android:background="@color/bg_gray"
+        android:padding="15dp"
+        android:textColor="@color/TextBlack">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:text="1"
+            android:layout_weight="0.5"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget" />
+
+        <TextView
+            android:id="@+id/sdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:text="12/12/2017"
+            android:layout_weight="2"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget" />
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="7dp"
+            android:layout_weight="3"
+            android:text="10000/-"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget" />
+
+        <TextView
+            android:id="@+id/teacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cash"
+            android:layout_weight="3"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget" />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Completed"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget" />
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_gray"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Number"
+                    android:textColor="@color/LittlePrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:paddingLeft="5dp"
+                    android:text="1" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Date"
+                    android:textColor="@color/LittlePrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:paddingLeft="5dp"
+                    android:text="05/07/2017 " />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Class"
+                    android:textColor="@color/LittlePrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/className"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:maxLines="5"
+                    android:padding="3dp"
+                    android:paddingLeft="5dp"
+                    android:text="Play Group" />
+                <TextView
+                    android:id="@+id/tvUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:paddingLeft="5dp"
+                    android:text="Update" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Batch"
+                    android:textColor="@color/LittlePrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/batchName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:maxLines="5"
+                    android:padding="3dp"
+                    android:paddingLeft="5dp"
+                    android:text="Morning" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Status"
+                    android:textColor="@color/LittlePrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:maxLines="5"
+                    android:padding="3dp"
+                    android:paddingLeft="5dp"
+                    android:text="In Process" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="Topic"
+                    android:textColor="@color/LittlePrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/topic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:maxLines="5"
+                    android:padding="3dp"
+                    android:paddingLeft="5dp"
+                    android:text="Testing" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/TextBlack" />
+</LinearLayout>

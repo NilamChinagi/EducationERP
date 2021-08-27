@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_corners"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/CustomColor"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="match_parent"
+            android:text="Leave Type"/>
+
+        <TextView
+
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/CustomColor"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_height="match_parent"
+            android:text="Half day"/>
+
+        <TextView
+
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/CustomColor"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="match_parent"
+            android:text="Status"/>
+        <TextView
+
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/CustomColor"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="match_parent"
+            android:text="Action"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvLeaveType"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="match_parent"
+                android:text="History"/>
+
+            <TextView
+                android:id="@+id/tvHalfDay"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_height="match_parent"
+                android:text="YES"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="match_parent"
+                android:text="Approve"/>
+            <TextView
+                android:id="@+id/tvAction"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:background="@color/loginBack"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="1dp"
+                android:layout_height="match_parent"
+                android:text="Edit"/>
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/CustomColor"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="match_parent"
+                android:text="Leave Date"/>
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeaveDate"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="101"/>
+                <TextView
+                    android:id="@+id/tvTO"
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="TO" />
+                <TextView
+                    android:id="@+id/tvLeaveDateend"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="TO" />
+            </LinearLayout>
+
+          </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/CustomColor"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="match_parent"
+                android:text="Reason"/>
+
+            <TextView
+                android:id="@+id/tvReason"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_height="match_parent"
+                android:text="101"/></LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimaryDark"/>
+
+
+    </LinearLayout>
+</LinearLayout>
